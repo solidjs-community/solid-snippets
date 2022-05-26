@@ -1,0 +1,13 @@
+{
+  "name": "solid-snippets",
+  "version": "0.0.1",
+  "description": "VSCode extension with helpful code snippets for SolidJS.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solidjs-community/solid-snippets.git"
+  },
+  "license": "MIT",
+  "scripts": {},
+  "devDependencies": {},
+  "packageManager": "pnpm@7.1.5"
+}
