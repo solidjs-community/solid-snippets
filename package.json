@@ -29,10 +29,14 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets/test.json"
+        "path": "./snippets/component.js.json"
       },
       {
         "language": "typescript",
+        "path": "./snippets/test.json"
+      },
+      {
+        "language": "javascriptreact",
         "path": "./snippets/test.json"
       }
     ]
