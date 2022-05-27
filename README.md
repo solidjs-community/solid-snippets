@@ -1,5 +1,7 @@
 <p>
-  <img width="100%" src="https://assets.solidjs.com/banner?type=Snippets&background=tiles&project=%20" alt="Solid Snippets">
+  <a href="https://github.com/solidjs-community/solid-snippets">
+    <img width="100%" src="https://assets.solidjs.com/banner?type=Snippets&background=tiles&project=%20" alt="Solid Snippets">
+  </a>
 </p>
 
 # solid-snippets

@@ -17,7 +17,6 @@
     "Snippets"
   ],
   "scripts": {
-    "install": "pnpm run build && pnpm run install-extension",
     "build": "vsce package -o solid-snippets.vsix",
     "install-extension": "code --install-extension solid-snippets.vsix",
     "format": "prettier -w \"snippets/*.json\""
