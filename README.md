@@ -19,8 +19,9 @@ VSCode extension with helpful code snippets for SolidJS.
 |<h4>*Component*</h4>|
 |`scomp`|Solid Functional Component|Base for an empty solid.js component|JS|
 |`scontext`|Solid Context Component|Base for a createContext() component|JS|
-|<h4>*Test*</h4>|
-|`stest`|Test Snippet|Test Snippet|TS & JS|
+|<h4>*Effect*</h4>|
+|`seff`|Simple createEffect|Simple createEffect|TS & JS|
+|`seffon`|createEffect with explicit sources|createEffect with explicit sources|TS & JS|
 
 <!-- ⛔️ GENERATE-SNIPPETS-TABLE:END — Do not remove or modify this section. -->
 
