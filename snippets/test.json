@@ -1,7 +1,0 @@
-{
-  "Test Snippet": {
-    "prefix": "stest",
-    "body": ["Hello! This is a generated Solid Snippet"],
-    "description": "Test Snippet"
-  }
-}
