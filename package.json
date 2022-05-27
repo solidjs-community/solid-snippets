@@ -3,10 +3,14 @@
   "displayName": "SolidJS Snippets",
   "icon": "assets/logo.png",
   "version": "0.0.1",
+  "publisher": "solidjs-community",
+  "contributors": [
+    "Damian Tarawski <gthetarnav@gmail.com>"
+  ],
   "description": "VSCode extension with helpful code snippets for SolidJS.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/solidjs-community/solid-snippets.git"
+    "url": "https://github.com/solidjs-community/solid-snippets.git"
   },
   "license": "MIT",
   "keywords": [
