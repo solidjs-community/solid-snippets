@@ -1,0 +1,9 @@
+{
+  "Input two-way binding": {
+    "prefix": "sinput",
+    "body": [
+      "<input type=\"${1:text}\" value={${2:value}()} onInput={e => ${3:setValue}(e.currentTarget.value)}/>"
+    ],
+    "description": "Input two-way binding"
+  }
+}
