@@ -7,7 +7,12 @@
     "url": "git+https://github.com/solidjs-community/solid-snippets.git"
   },
   "license": "MIT",
+  "engines": {
+    "vscode": "^1.67.0"
+  },
   "scripts": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/vscode": "^1.67.0"
+  },
   "packageManager": "pnpm@7.1.5"
 }
