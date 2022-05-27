@@ -22,7 +22,7 @@
     "Snippets"
   ],
   "scripts": {
-    "build": "vsce package -o solid-snippets.vsix",
+    "build": "pnpm run update-snippets && vsce package -o solid-snippets.vsix",
     "install-extension": "code --install-extension solid-snippets.vsix",
     "format": "prettier -w \"snippets/*.json\" \"scripts/**/*.{js,ts,json,css,tsx,jsx}\"",
     "update-snippets": "node scripts/update-snippets.js"
@@ -39,19 +39,43 @@
       },
       {
         "language": "typescript",
-        "path": "./snippets/test.json"
+        "path": "./snippets/component.ts.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/test.json"
+        "path": "./snippets/component.ts.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/effect.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/effect.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/test.json"
+        "path": "./snippets/effect.json"
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/test.json"
+        "path": "./snippets/effect.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/jsx.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/jsx.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/jsx.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/jsx.json"
       }
     ]
   },
