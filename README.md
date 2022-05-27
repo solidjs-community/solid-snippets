@@ -4,21 +4,23 @@
   </a>
 </p>
 
-# solid-snippets
+# Solid Snippets
 
 VSCode extension with helpful code snippets for SolidJS.
+
+[**GET THE EXTENSION**](https://marketplace.visualstudio.com/items?itemName=solidjs-community.solid-snippets)
 
 ## Snippets
 
 <!-- ⛔️ GENERATE-SNIPPETS-TABLE:START — Do not remove or modify this section. -->
 
-|Prefix|Name|Description|Languages|
-|----|----|----|----|
-|<h4>*Component*</h4>|
-|`scomp`|Solid Functional Component|Base for an empty solid.js component|JS|
-|`scontext`|Solid Context Component|Base for a createContext() component|JS|
-|<h4>*Test*</h4>|
-|`stest`|Test Snippet|Test Snippet|TS & JS|
+| Prefix               | Name                       | Description                          | Languages |
+| -------------------- | -------------------------- | ------------------------------------ | --------- |
+| <h4>_Component_</h4> |
+| `scomp`              | Solid Functional Component | Base for an empty solid.js component | JS        |
+| `scontext`           | Solid Context Component    | Base for a createContext() component | JS        |
+| <h4>_Test_</h4>      |
+| `stest`              | Test Snippet               | Test Snippet                         | TS & JS   |
 
 <!-- ⛔️ GENERATE-SNIPPETS-TABLE:END — Do not remove or modify this section. -->
 
