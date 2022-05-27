@@ -6,7 +6,7 @@
 	"publisher": "solidjs-community",
 	"contributors": [
 		"Damian Tarawski <gthetarnav@gmail.com>",
-    "Christos Nicolaou <chris.anicolaou@yahoo.co.uk>"
+		"Christos Nicolaou <chris.anicolaou@yahoo.co.uk>"
 	],
 	"description": "VSCode extension with helpful code snippets for SolidJS.",
 	"repository": {
@@ -24,7 +24,7 @@
 	"scripts": {
 		"build": "vsce package -o solid-snippets.vsix",
 		"install-extension": "code --install-extension solid-snippets.vsix",
-		"format": "prettier -w \"snippets/*.json\"",
+		"format": "prettier -w \"snippets/*.json\" \"scripts/**/*.{js,ts,json,css,tsx,jsx}\"",
 		"update-snippets": "node scripts/update-snippets.js"
 	},
 	"contributes": {
