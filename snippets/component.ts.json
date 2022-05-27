@@ -1,0 +1,19 @@
+{
+  "Component extending an HTML Element": {
+    "prefix": "shtmlcomp",
+    "body": [
+      "import { ParentComponent, splitProps, JSX } from \"solid-js\";",
+      "",
+      "const ${1:name}: ParentComponent<",
+      "  JSX.IntrinsicElements[\"${2:div}\"] & {",
+      "    $0",
+      "  }",
+      "> = (props) => {",
+      "  const [local, attrs] = splitProps(props, []);",
+      "",
+      "  return <${2:div} {...attrs}>{props.children}</${2:div}>;",
+      "};"
+    ],
+    "description": "Component extending an HTML Element"
+  }
+}
