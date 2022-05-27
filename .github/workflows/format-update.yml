@@ -1,4 +1,4 @@
-name: Format
+name: Format and Update
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  format:
+  format-update:
     runs-on: ubuntu-latest
 
     steps:
@@ -28,3 +28,12 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Format"
+
+      - name: Update Snippets
+        run: pnpm run update-snippets
+
+      - name: Add, Commit and Push
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update Snippets"
+          file_pattern: README.md
