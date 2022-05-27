@@ -5,7 +5,8 @@
   "version": "0.0.1",
   "publisher": "solidjs-community",
   "contributors": [
-    "Damian Tarawski <gthetarnav@gmail.com>"
+    "Damian Tarawski <gthetarnav@gmail.com>",
+    "Christos Nicolaou <chris.anicolaou@yahoo.co.uk>"
   ],
   "description": "VSCode extension with helpful code snippets for SolidJS.",
   "repository": {
