@@ -2,7 +2,7 @@
   "name": "solid-snippets",
   "displayName": "SolidJS Snippets",
   "icon": "assets/logo.png",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "solidjs-community",
   "contributors": [
     "Damian Tarawski <gthetarnav@gmail.com>",
