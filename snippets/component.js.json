@@ -1,16 +1,16 @@
 {
-	"Solid Functional Component": {
-		"prefix": "scomp",
-		"body": [
-			"export default function ${1:${TM_FILENAME_BASE}}() {\n\n\treturn (\n\t\t<div>${1:${TM_FILENAME_BASE}}</div>\n\t);\n}"
-		],
-		"description": "Base for an empty solid.js component"
-	},
-	"Solid Context Component": {
-		"prefix": "scontext",
-		"body": [
-			"import { createContext, createSignal, useContext } from \"solid-js\";\n\nconst ${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}Context = createContext();\n\nexport function ${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}Provider(props) {\n\tconst [${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/downcase}/i}, set${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}] = createSignal(props.${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/downcase}/i} || \"\"),\n\t\tstore = [${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/downcase}/i}, set${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}];\n\n\treturn (\n\t\t<${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}Context.Provider value={store}>{props.children}</${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}Context.Provider>\n\t);\n}\n\nexport function use${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}() {\n\treturn useContext(${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}Context);\n}"
-		],
-		"description": "Base for a createContext() component"
-	}
+  "Solid Functional Component": {
+    "prefix": "scomp",
+    "body": [
+      "export default function ${1:${TM_FILENAME_BASE}}() {\n\n\treturn (\n\t\t<div>${1:${TM_FILENAME_BASE}}</div>\n\t);\n}"
+    ],
+    "description": "Base for an empty solid.js component"
+  },
+  "Solid Context Component": {
+    "prefix": "scontext",
+    "body": [
+      "import { createContext, createSignal, useContext } from \"solid-js\";\n\nconst ${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}Context = createContext();\n\nexport function ${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}Provider(props) {\n\tconst [${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/downcase}/i}, set${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}] = createSignal(props.${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/downcase}/i} || \"\"),\n\t\tstore = [${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/downcase}/i}, set${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}];\n\n\treturn (\n\t\t<${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}Context.Provider value={store}>{props.children}</${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}Context.Provider>\n\t);\n}\n\nexport function use${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}() {\n\treturn useContext(${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}Context);\n}"
+    ],
+    "description": "Base for a createContext() component"
+  }
 }
