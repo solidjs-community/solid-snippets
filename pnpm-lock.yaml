@@ -2,10 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/vscode': ^1.67.0
+  prettier: ^2.6.2
   vsce: ^2.8.0
 
 devDependencies:
   '@types/vscode': 1.67.0
+  prettier: 2.6.2
   vsce: 2.8.0
 
 packages:
@@ -538,6 +540,12 @@ packages:
       simple-get: 4.0.1
       tar-fs: 2.1.1
       tunnel-agent: 0.6.0
+    dev: true
+
+  /prettier/2.6.2:
+    resolution: {integrity: sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
     dev: true
 
   /process-nextick-args/2.0.1:
