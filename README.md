@@ -37,3 +37,10 @@ pnpm run build
 # install built extension package
 pnpm run install-extension
 ```
+
+## Snippets
+
+| Snippet         | Purpose                       |
+| --------------- | ----------------------------- |
+| `sbase`         | Single file component base    |
+| `more snippets` | List additional snippets here |
