@@ -5,3 +5,15 @@
 # solid-snippets
 
 VSCode extension with helpful code snippets for SolidJS.
+
+## Development
+
+### CLI Scripts
+
+```sh
+# build extension package
+pnpm run build
+
+# install built extension package
+pnpm run install-extension
+```

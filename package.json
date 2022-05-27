@@ -1,5 +1,7 @@
 {
   "name": "solid-snippets",
+  "displayName": "SolidJS Snippets",
+  "icon": "assets/logo.png",
   "version": "0.0.1",
   "description": "VSCode extension with helpful code snippets for SolidJS.",
   "repository": {
@@ -7,12 +9,36 @@
     "url": "git+https://github.com/solidjs-community/solid-snippets.git"
   },
   "license": "MIT",
+  "keywords": [
+    "solid",
+    "snippets"
+  ],
+  "categories": [
+    "Snippets"
+  ],
+  "scripts": {
+    "install": "pnpm run build && pnpm run install-extension",
+    "build": "vsce package -o solid-snippets.vsix",
+    "install-extension": "code --install-extension solid-snippets.vsix"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/test.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/test.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.67.0",
+    "vsce": "^2.8.0"
+  },
   "engines": {
     "vscode": "^1.67.0"
-  },
-  "scripts": {},
-  "devDependencies": {
-    "@types/vscode": "^1.67.0"
   },
   "packageManager": "pnpm@7.1.5"
 }

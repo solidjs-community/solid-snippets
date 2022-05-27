@@ -1,0 +1,7 @@
+{
+  "Test Snippet": {
+    "prefix": "stest",
+    "body": ["Hello! This is a generated Solid Snippet"],
+    "description": "Base for Vue File with SCSS"
+  }
+}

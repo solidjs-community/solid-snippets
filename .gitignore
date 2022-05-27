@@ -1,1 +1,7 @@
 node_modules/*
+
+# built vscode extension
+*.vsix
+
+# vscode settings
+.vscode/settings.json
