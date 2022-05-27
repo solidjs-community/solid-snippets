@@ -1,54 +1,54 @@
 {
-  "name": "solid-snippets",
-  "displayName": "SolidJS Snippets",
-  "icon": "assets/logo.png",
-  "version": "0.0.1",
-  "publisher": "solidjs-community",
-  "contributors": [
-    "Damian Tarawski <gthetarnav@gmail.com>",
+	"name": "solid-snippets",
+	"displayName": "SolidJS Snippets",
+	"icon": "assets/logo.png",
+	"version": "0.0.1",
+	"publisher": "solidjs-community",
+	"contributors": [
+		"Damian Tarawski <gthetarnav@gmail.com>",
     "Christos Nicolaou <chris.anicolaou@yahoo.co.uk>"
-  ],
-  "description": "VSCode extension with helpful code snippets for SolidJS.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/solidjs-community/solid-snippets.git"
-  },
-  "license": "MIT",
-  "keywords": [
-    "solid",
-    "snippets"
-  ],
-  "categories": [
-    "Snippets"
-  ],
-  "scripts": {
-    "build": "vsce package -o solid-snippets.vsix",
-    "install-extension": "code --install-extension solid-snippets.vsix",
-    "format": "prettier -w \"snippets/*.json\""
-  },
-  "contributes": {
-    "snippets": [
-      {
-        "language": "javascript",
-        "path": "./snippets/component.js.json"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/test.json"
-      },
-      {
-        "language": "javascriptreact",
-        "path": "./snippets/test.json"
-      }
-    ]
-  },
-  "devDependencies": {
-    "@types/vscode": "^1.67.0",
-    "vsce": "^2.8.0",
-    "prettier": "^2.6.2"
-  },
-  "engines": {
-    "vscode": "^1.67.0"
-  },
-  "packageManager": "pnpm@7.1.5"
+	],
+	"description": "VSCode extension with helpful code snippets for SolidJS.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/solidjs-community/solid-snippets.git"
+	},
+	"license": "MIT",
+	"keywords": [
+		"solid",
+		"snippets"
+	],
+	"categories": [
+		"Snippets"
+	],
+	"scripts": {
+		"build": "vsce package -o solid-snippets.vsix",
+		"install-extension": "code --install-extension solid-snippets.vsix",
+		"format": "prettier -w \"snippets/*.json\"",
+		"update-snippets": "node scripts/update-snippets.js"
+	},
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/component.js.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/test.json"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/test.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"prettier": "^2.6.2",
+		"vsce": "^2.8.0"
+	},
+	"engines": {
+		"vscode": "^1.67.0"
+	},
+	"packageManager": "pnpm@7.1.5"
 }
