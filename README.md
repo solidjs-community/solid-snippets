@@ -54,33 +54,6 @@ export default function ${1:${TM_FILENAME_BASE}}() {
 ```
 </details></td></tr>
       <tr>
-        <td><code>scontext→</code></td>
-        <td>Base for a createContext() component</td>
-        <td><b>js, jsx</b></td>
-      </tr>
-      <tr><td colspan="3"><details>
-      <summary><sub>Toggle Code Snippet</sub></summary>
-
-```tsx
-import { createContext, createSignal, useContext } from "solid-js";
-
-const ${TM_FILENAME_BASE/(.*?)\Context.*/${1:/capitalize}/i}Context = createContext();
-
-export function ${TM_FILENAME_BASE/(.*?)\Context.*/${1:/capitalize}/i}Provider(props) {
-  const [${TM_FILENAME_BASE/(.*?)\Context.*/${1:/downcase}/i}, set${TM_FILENAME_BASE/(.*?)\Context.*/${1:/capitalize}/i}] = createSignal(props.${TM_FILENAME_BASE/(.*?)\Context.*/${1:/downcase}/i} || ""),
-    store = [${TM_FILENAME_BASE/(.*?)\Context.*/${1:/downcase}/i}, set${TM_FILENAME_BASE/(.*?)\Context.*/${1:/capitalize}/i}];
-
-  return (
-    <${TM_FILENAME_BASE/(.*?)\Context.*/${1:/capitalize}/i}Context.Provider value={store}>{props.children}</${TM_FILENAME_BASE/(.*?)\Context.*/${1:/capitalize}/i}Context.Provider>
-  );
-}
-
-export function use${TM_FILENAME_BASE/(.*?)\Context.*/${1:/capitalize}/i}() {
-  return useContext(${TM_FILENAME_BASE/(.*?)\Context.*/${1:/capitalize}/i}Context);
-}
-```
-</details></td></tr>
-      <tr>
         <td><code>scomp→</code></td>
         <td>Solid empty function component</td>
         <td><b>ts, tsx</b></td>
@@ -248,6 +221,66 @@ const ${1:${TM_FILENAME_BASE}}: ParentComponent<
 
   return <${2:div} {...attrs}>{props.children}</${2:div}>;
 };
+```
+</details></td></tr><tr><td colspan="3"><h3>Context</h3></td></tr>
+      <tr>
+        <td><code>sctxp→</code></td>
+        <td>Solid Context Provider component</td>
+        <td><b>js, jsx</b></td>
+      </tr>
+      <tr><td colspan="3"><details>
+      <summary><sub>Toggle Code Snippet</sub></summary>
+
+```tsx
+import { createContext, createSignal, useContext } from "solid-js";
+
+const ${TM_FILENAME_BASE/(.*?)\Context.*/${1:/capitalize}/i}Context = createContext();
+
+export function ${TM_FILENAME_BASE/(.*?)\Context.*/${1:/capitalize}/i}Provider(props) {
+  const [${TM_FILENAME_BASE/(.*?)\Context.*/${1:/downcase}/i}, set${TM_FILENAME_BASE/(.*?)\Context.*/${1:/capitalize}/i}] = createSignal(props.${TM_FILENAME_BASE/(.*?)\Context.*/${1:/downcase}/i} || ""),
+    store = [${TM_FILENAME_BASE/(.*?)\Context.*/${1:/downcase}/i}, set${TM_FILENAME_BASE/(.*?)\Context.*/${1:/capitalize}/i}];
+
+  return (
+    <${TM_FILENAME_BASE/(.*?)\Context.*/${1:/capitalize}/i}Context.Provider value={store}>{props.children}</${TM_FILENAME_BASE/(.*?)\Context.*/${1:/capitalize}/i}Context.Provider>
+  );
+}
+
+export function use${TM_FILENAME_BASE/(.*?)\Context.*/${1:/capitalize}/i}() {
+  return useContext(${TM_FILENAME_BASE/(.*?)\Context.*/${1:/capitalize}/i}Context);
+}
+```
+</details></td></tr>
+      <tr>
+        <td><code>sctxp→</code></td>
+        <td>Solid Context Provider component</td>
+        <td><b>ts, tsx</b></td>
+      </tr>
+      <tr><td colspan="3"><details>
+      <summary><sub>Toggle Code Snippet</sub></summary>
+
+```tsx
+import { createContext, useContext, ParentComponent } from "solid-js";
+import { createStore } from "solid-js/store";
+
+const defaultState = {};
+
+const ${name:App}Context = createContext<[state: typeof defaultState, actions: {}]>([
+  defaultState,
+  {},
+]);
+
+export const ${name:App}Provider: ParentComponent = (props) => {
+  const [state, setState] = createStore(defaultState);
+
+  return (
+    <${name:App}Context.Provider value={[state, {}]}>
+      {props.children}
+    </${name:App}Context.Provider>
+  );
+};
+
+export const use${name:App} = () => useContext(${name:App}Context);
+
 ```
 </details></td></tr><tr><td colspan="3"><h3>Effect</h3></td></tr>
       <tr>
