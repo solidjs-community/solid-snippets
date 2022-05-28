@@ -6,7 +6,8 @@
   "publisher": "solidjs-community",
   "contributors": [
     "Damian Tarawski <gthetarnav@gmail.com>",
-    "Christos Nicolaou <chris.anicolaou@yahoo.co.uk>"
+    "Christos Nicolaou <chris.anicolaou@yahoo.co.uk>",
+    "Ionut Gabriel Marisescu<gabriel.lavoro10@gmail.com>"
   ],
   "description": "VSCode extension with helpful code snippets for SolidJS.",
   "repository": {
