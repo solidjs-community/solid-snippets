@@ -14,17 +14,17 @@ VSCode extension with helpful code snippets for SolidJS.
 
 <!-- ⛔️ GENERATE-SNIPPETS-TABLE:START — Do not remove or modify this section. -->
 
-|Prefix|Name|Description|Languages|
-|----|----|----|----|
+|Trigger|Content|Languages|
+|----|----|----|
 |<h4>*Component*</h4>|
-|`scomp`|Solid Functional Component|Base for an empty solid.js component|JS|
-|`scontext`|Solid Context Component|Base for a createContext() component|JS|
-|`shtmlcomp`|Component extending an HTML Element|Component extending an HTML Element|TS|
+|`scomp`|Base for an empty solid.js component|**js, jsx**|
+|`scontext`|Base for a createContext() component|**js, jsx**|
+|`shtmlcomp`|Component extending an HTML Element|**ts, tsx**|
 |<h4>*Effect*</h4>|
-|`seff`|Simple createEffect|Simple createEffect|TS & JS|
-|`seffon`|createEffect with explicit sources|createEffect with explicit sources|TS & JS|
+|`seff`|Simple createEffect|**js, ts, jsx, tsx**|
+|`seffon`|createEffect with explicit sources|**js, ts, jsx, tsx**|
 |<h4>*Jsx*</h4>|
-|`sinput`|Input two-way binding|Input two-way binding|TS & JS|
+|`sinput`|Input two-way binding|**js, ts, jsx, tsx**|
 
 <!-- ⛔️ GENERATE-SNIPPETS-TABLE:END — Do not remove or modify this section. -->
 
