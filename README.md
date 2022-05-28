@@ -16,6 +16,8 @@ VSCode extension with helpful code snippets for SolidJS.
 
 |Trigger|Content|Languages|
 |----|----|----|
+|<h4>*JSX*</h4>|
+|`sinput`|Input two-way binding|**js, ts, jsx, tsx**|
 |<h4>*Component*</h4>|
 |`scomp`|Base for an empty solid.js component|**js, jsx**|
 |`scontext`|Base for a createContext() component|**js, jsx**|
@@ -23,8 +25,6 @@ VSCode extension with helpful code snippets for SolidJS.
 |<h4>*Effect*</h4>|
 |`seff`|Simple createEffect|**js, ts, jsx, tsx**|
 |`seffon`|createEffect with explicit sources|**js, ts, jsx, tsx**|
-|<h4>*Jsx*</h4>|
-|`sinput`|Input two-way binding|**js, ts, jsx, tsx**|
 
 <!-- ⛔️ GENERATE-SNIPPETS-TABLE:END — Do not remove or modify this section. -->
 
