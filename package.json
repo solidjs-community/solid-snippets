@@ -81,6 +81,22 @@
       {
         "language": "javascriptreact",
         "path": "./snippets/jsx.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/reactivity.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/reactivity.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/reactivity.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/reactivity.json"
       }
     ]
   },
