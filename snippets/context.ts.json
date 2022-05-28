@@ -1,0 +1,30 @@
+{
+  "Solid Context Provider component": {
+    "prefix": "sctxp",
+    "body": [
+      "import { createContext, useContext, ParentComponent } from \"solid-js\";",
+      "import { createStore } from \"solid-js/store\";",
+      "",
+      "const defaultState = {};",
+      "",
+      "const ${name:App}Context = createContext<[state: typeof defaultState, actions: {}]>([",
+      "  defaultState,",
+      "  {},",
+      "]);",
+      "",
+      "export const ${name:App}Provider: ParentComponent = (props) => {",
+      "  const [state, setState] = createStore(defaultState);",
+      "",
+      "  return (",
+      "    <${name:App}Context.Provider value={[state, {}]}>",
+      "      {props.children}",
+      "    </${name:App}Context.Provider>",
+      "  );",
+      "};",
+      "",
+      "export const use${name:App} = () => useContext(${name:App}Context);",
+      ""
+    ],
+    "description": "Solid Context Provider component"
+  }
+}

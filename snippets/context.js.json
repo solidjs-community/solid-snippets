@@ -1,0 +1,24 @@
+{
+  "Solid Context Provider component": {
+    "prefix": "sctxp",
+    "body": [
+      "import { createContext, createSignal, useContext } from \"solid-js\";",
+      "",
+      "const ${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}Context = createContext();",
+      "",
+      "export function ${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}Provider(props) {",
+      "  const [${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/downcase}/i}, set${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}] = createSignal(props.${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/downcase}/i} || \"\"),",
+      "    store = [${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/downcase}/i}, set${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}];",
+      "",
+      "  return (",
+      "    <${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}Context.Provider value={store}>{props.children}</${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}Context.Provider>",
+      "  );",
+      "}",
+      "",
+      "export function use${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}() {",
+      "  return useContext(${TM_FILENAME_BASE/(.*?)\\Context.*/${1:/capitalize}/i}Context);",
+      "}"
+    ],
+    "description": "Solid Context Provider component"
+  }
+}
