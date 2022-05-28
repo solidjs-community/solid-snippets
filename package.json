@@ -35,52 +35,28 @@
   "contributes": {
     "snippets": [
       {
-        "language": "typescript",
-        "path": "./snippets/JSX.json"
+        "language": "javascriptreact",
+        "path": "./snippets/JSX.jsx.tsx.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/JSX.json"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/JSX.json"
+        "path": "./snippets/JSX.jsx.tsx.json"
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/JSX.json"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/component.js.json"
-      },
-      {
-        "language": "javascriptreact",
-        "path": "./snippets/component.js.json"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/component.ts.json"
+        "path": "./snippets/component.jsx.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/component.ts.json"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/context.js.json"
+        "path": "./snippets/component.tsx.json"
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/context.js.json"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/context.ts.json"
+        "path": "./snippets/context.jsx.json"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/context.ts.json"
+        "path": "./snippets/context.tsx.json"
       },
       {
         "language": "typescript",

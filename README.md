@@ -14,7 +14,6 @@ VSCode extension with helpful code snippets for SolidJS.
 
 <!-- ⛔️ GENERATE-SNIPPETS-TABLE:START — Do not remove or modify this section. -->
 
-
   <table>
     <thead>
       <tr>
@@ -27,7 +26,7 @@ VSCode extension with helpful code snippets for SolidJS.
       <tr>
         <td><code>sinput→</code></td>
         <td>Input two-way binding</td>
-        <td><b>js, ts, jsx, tsx</b></td>
+        <td><b>jsx, tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
       <summary><sup>Toggle Code Snippet</sup></summary>
@@ -35,11 +34,12 @@ VSCode extension with helpful code snippets for SolidJS.
 ```tsx
 <input type="${1:text}" value={${2:value}()} onInput={e => ${3:setValue}(e.currentTarget.value)}/>
 ```
+
 </details></td></tr><tr><td colspan="3"><h3>Component</h3></td></tr>
       <tr>
         <td><code>scomp→</code></td>
         <td>Base for an empty solid.js component</td>
-        <td><b>js, jsx</b></td>
+        <td><b>jsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
       <summary><sup>Toggle Code Snippet</sup></summary>
@@ -52,11 +52,12 @@ export default function ${1:${TM_FILENAME_BASE}}() {
   );
 }
 ```
+
 </details></td></tr>
       <tr>
         <td><code>scomp→</code></td>
         <td>Solid empty function component</td>
-        <td><b>ts, tsx</b></td>
+        <td><b>tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
       <summary><sup>Toggle Code Snippet</sup></summary>
@@ -67,11 +68,12 @@ const ${1:${TM_FILENAME_BASE}}: Component<{$2}> = (props) => {
   return <div></div>;
 };
 ```
+
 </details></td></tr>
       <tr>
         <td><code>spcomp→</code></td>
         <td>Solid empty Parent Component</td>
-        <td><b>ts, tsx</b></td>
+        <td><b>tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
       <summary><sup>Toggle Code Snippet</sup></summary>
@@ -82,11 +84,12 @@ const ${1:${TM_FILENAME_BASE}}: ParentComponent<{$2}> = (props) => {
   return <div>{props.children}</div>;
 };
 ```
+
 </details></td></tr>
       <tr>
         <td><code>sfcomp→</code></td>
         <td>Solid empty Flow Component</td>
-        <td><b>ts, tsx</b></td>
+        <td><b>tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
       <summary><sup>Toggle Code Snippet</sup></summary>
@@ -97,11 +100,12 @@ const ${1:${TM_FILENAME_BASE}}: FlowComponent<{$2}, ${3:JSX.Element}> = (props) 
   return <div>{props.children}</div>;
 };
 ```
+
 </details></td></tr>
       <tr>
         <td><code>svcomp→</code></td>
         <td>Solid empty Void Component</td>
-        <td><b>ts, tsx</b></td>
+        <td><b>tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
       <summary><sup>Toggle Code Snippet</sup></summary>
@@ -112,11 +116,12 @@ const ${1:${TM_FILENAME_BASE}}: VoidComponent<{$2}> = (props) => {
   return <div></div>;
 };
 ```
+
 </details></td></tr>
       <tr>
         <td><code>scompi→</code></td>
         <td>Solid empty function componen. With Importst</td>
-        <td><b>ts, tsx</b></td>
+        <td><b>tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
       <summary><sup>Toggle Code Snippet</sup></summary>
@@ -129,11 +134,12 @@ const ${1:${TM_FILENAME_BASE}}: Component<{$2}> = (props) => {
   return <div></div>;
 };
 ```
+
 </details></td></tr>
       <tr>
         <td><code>spcompi→</code></td>
         <td>Solid empty Parent Component. With Imports</td>
-        <td><b>ts, tsx</b></td>
+        <td><b>tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
       <summary><sup>Toggle Code Snippet</sup></summary>
@@ -146,11 +152,12 @@ const ${1:${TM_FILENAME_BASE}}: ParentComponent<{$2}> = (props) => {
   return <div>{props.children}</div>;
 };
 ```
+
 </details></td></tr>
       <tr>
         <td><code>sfcompi→</code></td>
         <td>Solid empty Flow Component. With Imports</td>
-        <td><b>ts, tsx</b></td>
+        <td><b>tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
       <summary><sup>Toggle Code Snippet</sup></summary>
@@ -163,11 +170,12 @@ const ${1:${TM_FILENAME_BASE}}: FlowComponent<{$2}, ${3:JSX.Element}> = (props) 
   return <div>{props.children}</div>;
 };
 ```
+
 </details></td></tr>
       <tr>
         <td><code>svcompi→</code></td>
         <td>Solid empty Void Component. With Imports</td>
-        <td><b>ts, tsx</b></td>
+        <td><b>tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
       <summary><sup>Toggle Code Snippet</sup></summary>
@@ -180,11 +188,12 @@ const ${1:${TM_FILENAME_BASE}}: VoidComponent<{$2}> = (props) => {
   return <div></div>;
 };
 ```
+
 </details></td></tr>
       <tr>
         <td><code>shtmlcomp→</code></td>
         <td>Component extending an HTML Element</td>
-        <td><b>ts, tsx</b></td>
+        <td><b>tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
       <summary><sup>Toggle Code Snippet</sup></summary>
@@ -200,11 +209,12 @@ const ${1:${TM_FILENAME_BASE}}: ParentComponent<
   return <${2:div} {...attrs}>{props.children}</${2:div}>;
 };
 ```
+
 </details></td></tr>
       <tr>
         <td><code>shtmlcompi→</code></td>
         <td>Component extending an HTML Element. With Imports</td>
-        <td><b>ts, tsx</b></td>
+        <td><b>tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
       <summary><sup>Toggle Code Snippet</sup></summary>
@@ -222,11 +232,12 @@ const ${1:${TM_FILENAME_BASE}}: ParentComponent<
   return <${2:div} {...attrs}>{props.children}</${2:div}>;
 };
 ```
+
 </details></td></tr><tr><td colspan="3"><h3>Context</h3></td></tr>
       <tr>
         <td><code>sctxp→</code></td>
         <td>Solid Context Provider component</td>
-        <td><b>js, jsx</b></td>
+        <td><b>jsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
       <summary><sup>Toggle Code Snippet</sup></summary>
@@ -249,11 +260,12 @@ export function use${TM_FILENAME_BASE/(.*?)\Context.*/${1:/capitalize}/i}() {
   return useContext(${TM_FILENAME_BASE/(.*?)\Context.*/${1:/capitalize}/i}Context);
 }
 ```
+
 </details></td></tr>
       <tr>
         <td><code>sctxp→</code></td>
         <td>Solid Context Provider component</td>
-        <td><b>ts, tsx</b></td>
+        <td><b>tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
       <summary><sup>Toggle Code Snippet</sup></summary>
@@ -282,11 +294,12 @@ export const ${name:App}Provider: ParentComponent = (props) => {
 export const use${name:App} = () => useContext(${name:App}Context);
 
 ```
+
 </details></td></tr><tr><td colspan="3"><h3>Effect</h3></td></tr>
       <tr>
         <td><code>seff→</code></td>
         <td>Simple createEffect</td>
-        <td><b>js, ts, jsx, tsx</b></td>
+        <td><b>ts, tsx, js, jsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
       <summary><sup>Toggle Code Snippet</sup></summary>
@@ -297,11 +310,12 @@ createEffect(() => {
   $0
 });
 ```
+
 </details></td></tr>
       <tr>
         <td><code>seffon→</code></td>
         <td>createEffect with explicit sources</td>
-        <td><b>js, ts, jsx, tsx</b></td>
+        <td><b>ts, tsx, js, jsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
       <summary><sup>Toggle Code Snippet</sup></summary>
@@ -311,11 +325,12 @@ createEffect(on(${1: source}, (value, prev) => {
   $0
 }));
 ```
+
 </details></td></tr><tr><td colspan="3"><h3>Reactivity</h3></td></tr>
       <tr>
         <td><code>ssig→</code></td>
         <td>Simple createSignal</td>
-        <td><b>js, ts, jsx, tsx</b></td>
+        <td><b>ts, tsx, js, jsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
       <summary><sup>Toggle Code Snippet</sup></summary>
@@ -323,7 +338,9 @@ createEffect(on(${1: source}, (value, prev) => {
 ```tsx
 const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = createSignal(${2});
 ```
+
 </details></td></tr></tbody></table>
+
 <!-- ⛔️ GENERATE-SNIPPETS-TABLE:END — Do not remove or modify this section. -->
 
 ## Contributing
