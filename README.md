@@ -14,7 +14,6 @@ VSCode extension with helpful code snippets for SolidJS.
 
 <!-- ⛔️ GENERATE-SNIPPETS-TABLE:START — Do not remove or modify this section. -->
 
-
   <table>
     <thead>
       <tr>
@@ -283,15 +282,15 @@ createEffect(on(${1: source}, (value, prev) => {
 
 ## Contributing
 
-This is an open source project open to everyone of SolidJS community. Contributions are welcome. ([github](https://github.com/solidjs-community/solid-snippets))
+This is an open source project open to everyone. Contributions are welcome. ([github](https://github.com/solidjs-community/solid-snippets))
 
-If you are contributing a snippet, please read about the [naming convention](#naming-convention) below and update only the snippet files. _(readme and package.json are updated automatically)_ You can use a [Snipper Generator](https://snippet-generator.app) and [Solid Playground](https://playground.solidjs.com) to get the code right.
+If you are contributing a snippet, please read about the [naming convention](#naming-convention) below and update only the snippet files. _(readme and package.json are updated automatically)_ You can use a [Snippet Generator](https://snippet-generator.app) and [Solid Playground](https://playground.solidjs.com) to get desired code.
 
 Downloading and installing the repository isn't required to work on snippets. But if you want to test your changes before commiting, we use a [pnpm](https://pnpm.io) package manager. Once node modules are installed, you can use [CLI Scripts](#cli-scripts) to build and install locally built extension. _(You might have to reload your vscode window to apply extension update)_
 
 ### Naming Convention
 
-When creating new snippets, please name the files with according suffix representing target language:
+When creating new snippets, please name the files with according suffix representing the target language:
 
 ```sh
 snippets/
