@@ -2,6 +2,10 @@
   "name": "solid-snippets",
   "displayName": "SolidJS Snippets",
   "icon": "assets/logo.png",
+  "galleryBanner": {
+    "color": "#414042",
+    "theme": "dark"
+  },
   "version": "0.0.4",
   "publisher": "solidjs-community",
   "contributors": [
