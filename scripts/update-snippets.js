@@ -76,7 +76,7 @@ readdirSync(pathTo(`../snippets/`)).forEach(fileName => {
         <td><b>${getLanguageName(lang)}</b></td>
       </tr>
       <tr><td colspan="3"><details>
-      <summary><sub>Toggle Code Snippet</sub></summary>
+      <summary><sup>Toggle Code Snippet</sup></summary>
 
 \`\`\`tsx
 ${stringifyBody(body)}
