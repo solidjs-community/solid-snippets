@@ -30,7 +30,7 @@ VSCode extension with helpful code snippets for SolidJS.
         <td><b>js, ts, jsx, tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
-      <summary><sub>Toggle Code Snippet</sub></summary>
+      <summary><sup>Toggle Code Snippet</sup></summary>
 
 ```tsx
 <input type="${1:text}" value={${2:value}()} onInput={e => ${3:setValue}(e.currentTarget.value)}/>
@@ -42,7 +42,7 @@ VSCode extension with helpful code snippets for SolidJS.
         <td><b>js, jsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
-      <summary><sub>Toggle Code Snippet</sub></summary>
+      <summary><sup>Toggle Code Snippet</sup></summary>
 
 ```tsx
 export default function ${1:${TM_FILENAME_BASE}}() {
@@ -59,7 +59,7 @@ export default function ${1:${TM_FILENAME_BASE}}() {
         <td><b>ts, tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
-      <summary><sub>Toggle Code Snippet</sub></summary>
+      <summary><sup>Toggle Code Snippet</sup></summary>
 
 ```tsx
 const ${1:${TM_FILENAME_BASE}}: Component<{$2}> = (props) => {
@@ -74,7 +74,7 @@ const ${1:${TM_FILENAME_BASE}}: Component<{$2}> = (props) => {
         <td><b>ts, tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
-      <summary><sub>Toggle Code Snippet</sub></summary>
+      <summary><sup>Toggle Code Snippet</sup></summary>
 
 ```tsx
 const ${1:${TM_FILENAME_BASE}}: ParentComponent<{$2}> = (props) => {
@@ -89,7 +89,7 @@ const ${1:${TM_FILENAME_BASE}}: ParentComponent<{$2}> = (props) => {
         <td><b>ts, tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
-      <summary><sub>Toggle Code Snippet</sub></summary>
+      <summary><sup>Toggle Code Snippet</sup></summary>
 
 ```tsx
 const ${1:${TM_FILENAME_BASE}}: FlowComponent<{$2}, ${3:JSX.Element}> = (props) => {
@@ -104,7 +104,7 @@ const ${1:${TM_FILENAME_BASE}}: FlowComponent<{$2}, ${3:JSX.Element}> = (props) 
         <td><b>ts, tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
-      <summary><sub>Toggle Code Snippet</sub></summary>
+      <summary><sup>Toggle Code Snippet</sup></summary>
 
 ```tsx
 const ${1:${TM_FILENAME_BASE}}: VoidComponent<{$2}> = (props) => {
@@ -119,7 +119,7 @@ const ${1:${TM_FILENAME_BASE}}: VoidComponent<{$2}> = (props) => {
         <td><b>ts, tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
-      <summary><sub>Toggle Code Snippet</sub></summary>
+      <summary><sup>Toggle Code Snippet</sup></summary>
 
 ```tsx
 import { Component } from "solid-js";
@@ -136,7 +136,7 @@ const ${1:${TM_FILENAME_BASE}}: Component<{$2}> = (props) => {
         <td><b>ts, tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
-      <summary><sub>Toggle Code Snippet</sub></summary>
+      <summary><sup>Toggle Code Snippet</sup></summary>
 
 ```tsx
 import { ParentComponent } from "solid-js";
@@ -153,7 +153,7 @@ const ${1:${TM_FILENAME_BASE}}: ParentComponent<{$2}> = (props) => {
         <td><b>ts, tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
-      <summary><sub>Toggle Code Snippet</sub></summary>
+      <summary><sup>Toggle Code Snippet</sup></summary>
 
 ```tsx
 import { FlowComponent, JSX } from "solid-js";
@@ -170,7 +170,7 @@ const ${1:${TM_FILENAME_BASE}}: FlowComponent<{$2}, ${3:JSX.Element}> = (props) 
         <td><b>ts, tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
-      <summary><sub>Toggle Code Snippet</sub></summary>
+      <summary><sup>Toggle Code Snippet</sup></summary>
 
 ```tsx
 import { VoidComponent } from "solid-js";
@@ -187,7 +187,7 @@ const ${1:${TM_FILENAME_BASE}}: VoidComponent<{$2}> = (props) => {
         <td><b>ts, tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
-      <summary><sub>Toggle Code Snippet</sub></summary>
+      <summary><sup>Toggle Code Snippet</sup></summary>
 
 ```tsx
 const ${1:${TM_FILENAME_BASE}}: ParentComponent<
@@ -207,7 +207,7 @@ const ${1:${TM_FILENAME_BASE}}: ParentComponent<
         <td><b>ts, tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
-      <summary><sub>Toggle Code Snippet</sub></summary>
+      <summary><sup>Toggle Code Snippet</sup></summary>
 
 ```tsx
 import { ParentComponent, splitProps, JSX } from "solid-js";
@@ -229,7 +229,7 @@ const ${1:${TM_FILENAME_BASE}}: ParentComponent<
         <td><b>js, jsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
-      <summary><sub>Toggle Code Snippet</sub></summary>
+      <summary><sup>Toggle Code Snippet</sup></summary>
 
 ```tsx
 import { createContext, createSignal, useContext } from "solid-js";
@@ -256,7 +256,7 @@ export function use${TM_FILENAME_BASE/(.*?)\Context.*/${1:/capitalize}/i}() {
         <td><b>ts, tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
-      <summary><sub>Toggle Code Snippet</sub></summary>
+      <summary><sup>Toggle Code Snippet</sup></summary>
 
 ```tsx
 import { createContext, useContext, ParentComponent } from "solid-js";
@@ -289,7 +289,7 @@ export const use${name:App} = () => useContext(${name:App}Context);
         <td><b>js, ts, jsx, tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
-      <summary><sub>Toggle Code Snippet</sub></summary>
+      <summary><sup>Toggle Code Snippet</sup></summary>
 
 ```tsx
 createEffect(() => {
@@ -304,7 +304,7 @@ createEffect(() => {
         <td><b>js, ts, jsx, tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
-      <summary><sub>Toggle Code Snippet</sub></summary>
+      <summary><sup>Toggle Code Snippet</sup></summary>
 
 ```tsx
 createEffect(on(${1: source}, (value, prev) => {
@@ -318,7 +318,7 @@ createEffect(on(${1: source}, (value, prev) => {
         <td><b>js, ts, jsx, tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
-      <summary><sub>Toggle Code Snippet</sub></summary>
+      <summary><sup>Toggle Code Snippet</sup></summary>
 
 ```tsx
 const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = createSignal(${2});
