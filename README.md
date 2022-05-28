@@ -340,11 +340,15 @@ When creating new snippets, please name the files with according suffix represen
 
 ```sh
 snippets/
-  # snippet only for typescript
-  component.ts.json
-  # snippet only for javascript
-  component.js.json
-  # universal snippet for both languages
+  # snippets for "Category Name" category only for .ts and tsx files
+  Category-Name.ts.json
+  # "Context" snippets only for .jsx
+  context.jsx.json
+  # "Component" snippets only for .tsx
+  component.tsx.json
+  # "Component" snippets for both .jsx and .tsx
+  component.jsx.tsx.json
+  # universal snippets for all languages (js, jsx, ts, tsx)
   effect.json
 ```
 

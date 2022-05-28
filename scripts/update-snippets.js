@@ -5,16 +5,22 @@ const pathTo = (...path) => join(__dirname, ...path);
 
 const getCategoryName = name => name[0].toUpperCase() + name.substring(1).replace(/-/, " ");
 
-const getLanguageName = id => {
-  if (id === "ts") return "ts, tsx";
-  if (id === "js") return "js, jsx";
-  return "js, ts, jsx, tsx";
-};
+const getLanguageName = languages =>
+  languages
+    .join(", ")
+    .replace(/javascriptreact/, "jsx")
+    .replace(/typescriptreact/, "tsx")
+    .replace(/javascript/, "js")
+    .replace(/typescript/, "ts");
 
-const getConfigLanguage = id => {
-  if (id === "ts") return ["typescript", "typescriptreact"];
-  if (id === "js") return ["javascript", "javascriptreact"];
-  return ["typescript", "typescriptreact", "javascript", "javascriptreact"];
+const getLanguages = fileName => {
+  const languages = [];
+  if (fileName.includes(".jsx.")) languages.push("javascriptreact");
+  else if (fileName.includes(".js.")) languages.push("javascript", "javascriptreact");
+  if (fileName.includes(".tsx.")) languages.push("typescriptreact");
+  else if (fileName.includes(".ts.")) languages.push("typescript");
+  if (!languages.length) return ["typescript", "typescriptreact", "javascript", "javascriptreact"];
+  return languages;
 };
 
 const stringifyBody = body =>
@@ -28,11 +34,12 @@ readdirSync(pathTo(`../snippets/`)).forEach(fileName => {
   if (!fileName.endsWith(".json")) return console.log("Skipping unrecognized file:", fileName);
   const json = JSON.parse(readFileSync(pathTo("../snippets/", fileName)));
 
-  const [prefix, _lang] = fileName.split(".");
+  const key = fileName.split(".")[0];
+  const languages = getLanguages(fileName);
+  const langName = getLanguageName(languages);
 
-  const lang = _lang === "ts" ? "ts" : _lang === "js" ? "js" : "*";
-  let snippets = categories[prefix];
-  if (!snippets) categories[prefix] = snippets = [];
+  let snippets = categories[key];
+  if (!snippets) categories[key] = snippets = [];
 
   for (const snippetName in json) {
     const { body, prefix, description } = json[snippetName];
@@ -43,10 +50,10 @@ readdirSync(pathTo(`../snippets/`)).forEach(fileName => {
     if (typeof description !== "string")
       return console.log(`"${snippetName}" snippet in ${fileName} has incorrect description.`);
 
-    snippets.push({ prefix, description, lang, body });
+    snippets.push({ prefix, description, langName, body });
   }
 
-  getConfigLanguage(lang).forEach(language => {
+  languages.forEach(language => {
     configList.push({
       language,
       path: `./snippets/${fileName}`,
@@ -68,12 +75,12 @@ readdirSync(pathTo(`../snippets/`)).forEach(fileName => {
     <tbody>`;
   Object.entries(categories).forEach(([prefix, snippets]) => {
     table += `<tr><td colspan="3"><h3>${getCategoryName(prefix)}</h3></td></tr>`;
-    snippets.forEach(({ prefix, description, lang, body }) => {
+    snippets.forEach(({ prefix, description, langName, body }) => {
       table += `
       <tr>
         <td><code>${prefix}→</code></td>
         <td>${description}</td>
-        <td><b>${getLanguageName(lang)}</b></td>
+        <td><b>${langName}</b></td>
       </tr>
       <tr><td colspan="3"><details>
       <summary><sup>Toggle Code Snippet</sup></summary>
@@ -81,6 +88,7 @@ readdirSync(pathTo(`../snippets/`)).forEach(fileName => {
 \`\`\`tsx
 ${stringifyBody(body)}
 \`\`\`
+
 </details></td></tr>`;
     });
   });
@@ -96,7 +104,7 @@ ${stringifyBody(body)}
   if (end === -1) return console.log("Couldn't find GENERATE-SNIPPETS-TABLE:END tag in README.md");
 
   let newReadme = readme.substring(0, start);
-  newReadme += `\n\n${table}\n`;
+  newReadme += `\n${table}\n\n`;
   newReadme += readme.substring(end);
 
   writeFileSync(pathTo("../README.md"), newReadme);
