@@ -18,7 +18,7 @@ const getConfigLanguage = id => {
 };
 
 const stringifyBody = body =>
-  (typeof body === "string" ? body : body.join("")).replace(/\t/g, "  ");
+  (typeof body === "string" ? body : body.join("\n")).replace(/\t/g, "  ");
 
 const categories = {};
 const configList = [];
