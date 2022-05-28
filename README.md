@@ -278,6 +278,18 @@ createEffect(on(${1: source}, (value, prev) => {
   $0
 }));
 ```
+</details></td></tr><tr><td colspan="3"><h3>Reactivity</h3></td></tr>
+      <tr>
+        <td><code>ssig→</code></td>
+        <td>Simple createSignal</td>
+        <td><b>js, ts, jsx, tsx</b></td>
+      </tr>
+      <tr><td colspan="3"><details>
+      <summary><sub>Toggle Code Snippet</sub></summary>
+
+```tsx
+const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = createSignal(${2});
+```
 </details></td></tr></tbody></table>
 <!-- ⛔️ GENERATE-SNIPPETS-TABLE:END — Do not remove or modify this section. -->
 
