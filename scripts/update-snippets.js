@@ -3,12 +3,12 @@ const { join } = require("path")
 
 const pathTo = (...path) => join(__dirname, ...path)
 
-const getCategoryName = prefix => prefix[0].toUpperCase() + prefix.substring(1)
+const getCategoryName = name => name[0].toUpperCase() + name.substring(1).replace(/-/, " ")
 
 const getLanguageName = id => {
-  if (id === "ts") return "TS"
-  if (id === "js") return "JS"
-  return "TS & JS"
+  if (id === "ts") return "ts, tsx"
+  if (id === "js") return "js, jsx"
+  return "js, ts, jsx, tsx"
 }
 
 const getConfigLanguage = id => {
@@ -33,14 +33,14 @@ readdirSync(pathTo(`../snippets/`)).forEach(fileName => {
 
   for (const snippetName in json) {
     const { body, prefix, description } = json[snippetName]
-    if (typeof prefix !== "string" && !Array.isArray(prefix))
+    if (typeof prefix !== "string")
       return console.log(`"${snippetName}" snippet in ${fileName} has incorrect prefix.`)
     if (typeof body !== "string" && !Array.isArray(body))
       return console.log(`"${snippetName}" snippet in ${fileName} has incorrect body.`)
     if (typeof description !== "string")
       return console.log(`"${snippetName}" snippet in ${fileName} has incorrect description.`)
 
-    snippets.push({ snippetName, prefix, description, lang })
+    snippets.push({ prefix, description, lang })
   }
 
   getConfigLanguage(lang).forEach(language => {
@@ -55,11 +55,11 @@ readdirSync(pathTo(`../snippets/`)).forEach(fileName => {
 ;(() => {
   const table = Object.entries(categories).reduce((md, [prefix, snippets]) => {
     md += `|<h4>*${getCategoryName(prefix)}*</h4>|\n`
-    snippets.forEach(({ snippetName, prefix, description, lang }) => {
-      md += `|\`${prefix}\`|${snippetName}|${description}|${getLanguageName(lang)}|\n`
+    snippets.forEach(({ prefix, description, lang }) => {
+      md += `|\`${prefix}\`|${description}|**${getLanguageName(lang)}**|\n`
     })
     return md
-  }, "|Prefix|Name|Description|Languages|\n|----|----|----|----|\n")
+  }, "|Trigger|Content|Languages|\n|----|----|----|\n")
 
   const readme = readFileSync(pathTo("../README.md")).toString()
   let start = readme.indexOf("-->", readme.indexOf("GENERATE-SNIPPETS-TABLE:START"))
