@@ -49,7 +49,7 @@
       "  return <div></div>;",
       "};"
     ],
-    "description": "Solid empty function component"
+    "description": "Solid empty function componen. With Importst"
   },
   "Solid empty Parent Component. With Imports": {
     "prefix": "spcompi",
@@ -61,7 +61,7 @@
       "  return <div>{props.children}</div>;",
       "};"
     ],
-    "description": "Solid empty Parent Component"
+    "description": "Solid empty Parent Component. With Imports"
   },
   "Solid empty Flow Component. With Imports": {
     "prefix": "sfcompi",
@@ -73,7 +73,7 @@
       "  return <div>{props.children}</div>;",
       "};"
     ],
-    "description": "Solid empty Flow Component"
+    "description": "Solid empty Flow Component. With Imports"
   },
   "Solid empty Void Component. With Imports": {
     "prefix": "svcompi",
@@ -117,6 +117,6 @@
       "  return <${2:div} {...attrs}>{props.children}</${2:div}>;",
       "};"
     ],
-    "description": "Component extending an HTML Element"
+    "description": "Component extending an HTML Element. With Imports"
   }
 }
