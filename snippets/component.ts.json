@@ -1,10 +1,113 @@
 {
+  "Solid empty function component": {
+    "prefix": "scomp",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE}}: Component<{$2}> = (props) => {",
+      "  $0",
+      "  return <div></div>;",
+      "};"
+    ],
+    "description": "Solid empty function component"
+  },
+  "Solid empty Parent Component": {
+    "prefix": "spcomp",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE}}: ParentComponent<{$2}> = (props) => {",
+      "  $0",
+      "  return <div>{props.children}</div>;",
+      "};"
+    ],
+    "description": "Solid empty Parent Component"
+  },
+  "Solid empty Flow Component": {
+    "prefix": "sfcomp",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE}}: FlowComponent<{$2}, ${3:JSX.Element}> = (props) => {",
+      "  $0",
+      "  return <div>{props.children}</div>;",
+      "};"
+    ],
+    "description": "Solid empty Flow Component"
+  },
+  "Solid empty Void Component": {
+    "prefix": "svcomp",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE}}: VoidComponent<{$2}> = (props) => {",
+      "  $0",
+      "  return <div></div>;",
+      "};"
+    ],
+    "description": "Solid empty Void Component"
+  },
+  "Solid empty function component. With Imports": {
+    "prefix": "scompi",
+    "body": [
+      "import { Component } from \"solid-js\";",
+      "",
+      "const ${1:${TM_FILENAME_BASE}}: Component<{$2}> = (props) => {",
+      "  $0",
+      "  return <div></div>;",
+      "};"
+    ],
+    "description": "Solid empty function component"
+  },
+  "Solid empty Parent Component. With Imports": {
+    "prefix": "spcompi",
+    "body": [
+      "import { ParentComponent } from \"solid-js\";",
+      "",
+      "const ${1:${TM_FILENAME_BASE}}: ParentComponent<{$2}> = (props) => {",
+      "  $0",
+      "  return <div>{props.children}</div>;",
+      "};"
+    ],
+    "description": "Solid empty Parent Component"
+  },
+  "Solid empty Flow Component. With Imports": {
+    "prefix": "sfcompi",
+    "body": [
+      "import { FlowComponent, JSX } from \"solid-js\";",
+      "",
+      "const ${1:${TM_FILENAME_BASE}}: FlowComponent<{$2}, ${3:JSX.Element}> = (props) => {",
+      "  $0",
+      "  return <div>{props.children}</div>;",
+      "};"
+    ],
+    "description": "Solid empty Flow Component"
+  },
+  "Solid empty Void Component. With Imports": {
+    "prefix": "svcompi",
+    "body": [
+      "import { VoidComponent } from \"solid-js\";",
+      "",
+      "const ${1:${TM_FILENAME_BASE}}: VoidComponent<{$2}> = (props) => {",
+      "  $0",
+      "  return <div></div>;",
+      "};"
+    ],
+    "description": "Solid empty Void Component. With Imports"
+  },
   "Component extending an HTML Element": {
     "prefix": "shtmlcomp",
     "body": [
+      "const ${1:${TM_FILENAME_BASE}}: ParentComponent<",
+      "  JSX.IntrinsicElements[\"${2:div}\"] & {",
+      "    $0",
+      "  }",
+      "> = (props) => {",
+      "  const [local, attrs] = splitProps(props, []);",
+      "",
+      "  return <${2:div} {...attrs}>{props.children}</${2:div}>;",
+      "};"
+    ],
+    "description": "Component extending an HTML Element"
+  },
+  "Component extending an HTML Element. With Imports": {
+    "prefix": "shtmlcompi",
+    "body": [
       "import { ParentComponent, splitProps, JSX } from \"solid-js\";",
       "",
-      "const ${1:name}: ParentComponent<",
+      "const ${1:${TM_FILENAME_BASE}}: ParentComponent<",
       "  JSX.IntrinsicElements[\"${2:div}\"] & {",
       "    $0",
       "  }",
