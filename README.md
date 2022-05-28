@@ -89,7 +89,10 @@ export function use${TM_FILENAME_BASE/(.*?)\Context.*/${1:/capitalize}/i}() {
       <summary><sub>Toggle Code Snippet</sub></summary>
 
 ```tsx
-const ${1:${TM_FILENAME_BASE}}: Component<{$2}> = (props) => {  $0  return <div></div>;};
+const ${1:${TM_FILENAME_BASE}}: Component<{$2}> = (props) => {
+  $0
+  return <div></div>;
+};
 ```
 </details></td></tr>
       <tr>
@@ -101,7 +104,10 @@ const ${1:${TM_FILENAME_BASE}}: Component<{$2}> = (props) => {  $0  return <div>
       <summary><sub>Toggle Code Snippet</sub></summary>
 
 ```tsx
-const ${1:${TM_FILENAME_BASE}}: ParentComponent<{$2}> = (props) => {  $0  return <div>{props.children}</div>;};
+const ${1:${TM_FILENAME_BASE}}: ParentComponent<{$2}> = (props) => {
+  $0
+  return <div>{props.children}</div>;
+};
 ```
 </details></td></tr>
       <tr>
@@ -113,7 +119,10 @@ const ${1:${TM_FILENAME_BASE}}: ParentComponent<{$2}> = (props) => {  $0  return
       <summary><sub>Toggle Code Snippet</sub></summary>
 
 ```tsx
-const ${1:${TM_FILENAME_BASE}}: FlowComponent<{$2}, ${3:JSX.Element}> = (props) => {  $0  return <div>{props.children}</div>;};
+const ${1:${TM_FILENAME_BASE}}: FlowComponent<{$2}, ${3:JSX.Element}> = (props) => {
+  $0
+  return <div>{props.children}</div>;
+};
 ```
 </details></td></tr>
       <tr>
@@ -125,7 +134,10 @@ const ${1:${TM_FILENAME_BASE}}: FlowComponent<{$2}, ${3:JSX.Element}> = (props) 
       <summary><sub>Toggle Code Snippet</sub></summary>
 
 ```tsx
-const ${1:${TM_FILENAME_BASE}}: VoidComponent<{$2}> = (props) => {  $0  return <div></div>;};
+const ${1:${TM_FILENAME_BASE}}: VoidComponent<{$2}> = (props) => {
+  $0
+  return <div></div>;
+};
 ```
 </details></td></tr>
       <tr>
@@ -137,7 +149,12 @@ const ${1:${TM_FILENAME_BASE}}: VoidComponent<{$2}> = (props) => {  $0  return <
       <summary><sub>Toggle Code Snippet</sub></summary>
 
 ```tsx
-import { Component } from "solid-js";const ${1:${TM_FILENAME_BASE}}: Component<{$2}> = (props) => {  $0  return <div></div>;};
+import { Component } from "solid-js";
+
+const ${1:${TM_FILENAME_BASE}}: Component<{$2}> = (props) => {
+  $0
+  return <div></div>;
+};
 ```
 </details></td></tr>
       <tr>
@@ -149,7 +166,12 @@ import { Component } from "solid-js";const ${1:${TM_FILENAME_BASE}}: Component<{
       <summary><sub>Toggle Code Snippet</sub></summary>
 
 ```tsx
-import { ParentComponent } from "solid-js";const ${1:${TM_FILENAME_BASE}}: ParentComponent<{$2}> = (props) => {  $0  return <div>{props.children}</div>;};
+import { ParentComponent } from "solid-js";
+
+const ${1:${TM_FILENAME_BASE}}: ParentComponent<{$2}> = (props) => {
+  $0
+  return <div>{props.children}</div>;
+};
 ```
 </details></td></tr>
       <tr>
@@ -161,7 +183,12 @@ import { ParentComponent } from "solid-js";const ${1:${TM_FILENAME_BASE}}: Paren
       <summary><sub>Toggle Code Snippet</sub></summary>
 
 ```tsx
-import { FlowComponent, JSX } from "solid-js";const ${1:${TM_FILENAME_BASE}}: FlowComponent<{$2}, ${3:JSX.Element}> = (props) => {  $0  return <div>{props.children}</div>;};
+import { FlowComponent, JSX } from "solid-js";
+
+const ${1:${TM_FILENAME_BASE}}: FlowComponent<{$2}, ${3:JSX.Element}> = (props) => {
+  $0
+  return <div>{props.children}</div>;
+};
 ```
 </details></td></tr>
       <tr>
@@ -173,7 +200,12 @@ import { FlowComponent, JSX } from "solid-js";const ${1:${TM_FILENAME_BASE}}: Fl
       <summary><sub>Toggle Code Snippet</sub></summary>
 
 ```tsx
-import { VoidComponent } from "solid-js";const ${1:${TM_FILENAME_BASE}}: VoidComponent<{$2}> = (props) => {  $0  return <div></div>;};
+import { VoidComponent } from "solid-js";
+
+const ${1:${TM_FILENAME_BASE}}: VoidComponent<{$2}> = (props) => {
+  $0
+  return <div></div>;
+};
 ```
 </details></td></tr>
       <tr>
@@ -185,7 +217,15 @@ import { VoidComponent } from "solid-js";const ${1:${TM_FILENAME_BASE}}: VoidCom
       <summary><sub>Toggle Code Snippet</sub></summary>
 
 ```tsx
-const ${1:${TM_FILENAME_BASE}}: ParentComponent<  JSX.IntrinsicElements["${2:div}"] & {    $0  }> = (props) => {  const [local, attrs] = splitProps(props, []);  return <${2:div} {...attrs}>{props.children}</${2:div}>;};
+const ${1:${TM_FILENAME_BASE}}: ParentComponent<
+  JSX.IntrinsicElements["${2:div}"] & {
+    $0
+  }
+> = (props) => {
+  const [local, attrs] = splitProps(props, []);
+
+  return <${2:div} {...attrs}>{props.children}</${2:div}>;
+};
 ```
 </details></td></tr>
       <tr>
@@ -197,7 +237,17 @@ const ${1:${TM_FILENAME_BASE}}: ParentComponent<  JSX.IntrinsicElements["${2:div
       <summary><sub>Toggle Code Snippet</sub></summary>
 
 ```tsx
-import { ParentComponent, splitProps, JSX } from "solid-js";const ${1:${TM_FILENAME_BASE}}: ParentComponent<  JSX.IntrinsicElements["${2:div}"] & {    $0  }> = (props) => {  const [local, attrs] = splitProps(props, []);  return <${2:div} {...attrs}>{props.children}</${2:div}>;};
+import { ParentComponent, splitProps, JSX } from "solid-js";
+
+const ${1:${TM_FILENAME_BASE}}: ParentComponent<
+  JSX.IntrinsicElements["${2:div}"] & {
+    $0
+  }
+> = (props) => {
+  const [local, attrs] = splitProps(props, []);
+
+  return <${2:div} {...attrs}>{props.children}</${2:div}>;
+};
 ```
 </details></td></tr><tr><td colspan="3"><h3>Effect</h3></td></tr>
       <tr>
@@ -209,7 +259,10 @@ import { ParentComponent, splitProps, JSX } from "solid-js";const ${1:${TM_FILEN
       <summary><sub>Toggle Code Snippet</sub></summary>
 
 ```tsx
-createEffect(() => {  const value = ${1:source}();  $0});
+createEffect(() => {
+  const value = ${1:source}();
+  $0
+});
 ```
 </details></td></tr>
       <tr>
@@ -221,7 +274,9 @@ createEffect(() => {  const value = ${1:source}();  $0});
       <summary><sub>Toggle Code Snippet</sub></summary>
 
 ```tsx
-createEffect(on(${1: source}, (value, prev) => {  $0}));
+createEffect(on(${1: source}, (value, prev) => {
+  $0
+}));
 ```
 </details></td></tr></tbody></table>
 <!-- ⛔️ GENERATE-SNIPPETS-TABLE:END — Do not remove or modify this section. -->
