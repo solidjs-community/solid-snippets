@@ -14,6 +14,7 @@ VSCode extension with helpful code snippets for SolidJS.
 
 <!-- ⛔️ GENERATE-SNIPPETS-TABLE:START — Do not remove or modify this section. -->
 
+
   <table>
     <thead>
       <tr>
