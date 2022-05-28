@@ -25,12 +25,12 @@ VSCode extension with helpful code snippets for SolidJS.
 |`spcomp`|Solid empty Parent Component|**ts, tsx**|
 |`sfcomp`|Solid empty Flow Component|**ts, tsx**|
 |`svcomp`|Solid empty Void Component|**ts, tsx**|
-|`scompi`|Solid empty function component|**ts, tsx**|
-|`spcompi`|Solid empty Parent Component|**ts, tsx**|
-|`sfcompi`|Solid empty Flow Component|**ts, tsx**|
+|`scompi`|Solid empty function componen. With Importst|**ts, tsx**|
+|`spcompi`|Solid empty Parent Component. With Imports|**ts, tsx**|
+|`sfcompi`|Solid empty Flow Component. With Imports|**ts, tsx**|
 |`svcompi`|Solid empty Void Component. With Imports|**ts, tsx**|
 |`shtmlcomp`|Component extending an HTML Element|**ts, tsx**|
-|`shtmlcompi`|Component extending an HTML Element|**ts, tsx**|
+|`shtmlcompi`|Component extending an HTML Element. With Imports|**ts, tsx**|
 |<h4>*Effect*</h4>|
 |`seff`|Simple createEffect|**js, ts, jsx, tsx**|
 |`seffon`|createEffect with explicit sources|**js, ts, jsx, tsx**|
