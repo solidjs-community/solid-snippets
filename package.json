@@ -60,22 +60,6 @@
       },
       {
         "language": "typescript",
-        "path": "./snippets/effect.json"
-      },
-      {
-        "language": "typescriptreact",
-        "path": "./snippets/effect.json"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/effect.json"
-      },
-      {
-        "language": "javascriptreact",
-        "path": "./snippets/effect.json"
-      },
-      {
-        "language": "typescript",
         "path": "./snippets/reactivity.json"
       },
       {

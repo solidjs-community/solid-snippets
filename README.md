@@ -276,26 +276,39 @@ import { createStore } from "solid-js/store";
 
 const defaultState = {};
 
-const ${name:App}Context = createContext<[state: typeof defaultState, actions: {}]>([
+const ${1:Name}Context = createContext<[state: typeof defaultState, actions: {}]>([
   defaultState,
   {},
 ]);
 
-export const ${name:App}Provider: ParentComponent = (props) => {
+export const ${1/(.*)/${1:/capitalize}/}Provider: ParentComponent = (props) => {
   const [state, setState] = createStore(defaultState);
 
   return (
-    <${name:App}Context.Provider value={[state, {}]}>
+    <${1/(.*)/${1:/capitalize}/}Context.Provider value={[state, {}]}>
       {props.children}
-    </${name:App}Context.Provider>
+    </${1/(.*)/${1:/capitalize}/}Context.Provider>
   );
 };
 
-export const use${name:App} = () => useContext(${name:App}Context);
+export const use${1/(.*)/${1:/capitalize}/} = () => useContext(${1/(.*)/${1:/capitalize}/}Context);
 
 ```
 
-</details></td></tr><tr><td colspan="3"><h3>Effect</h3></td></tr>
+</details></td></tr><tr><td colspan="3"><h3>Reactivity</h3></td></tr>
+      <tr>
+        <td><code>ssig→</code></td>
+        <td>Simple createSignal</td>
+        <td><b>ts, tsx, js, jsx</b></td>
+      </tr>
+      <tr><td colspan="3"><details>
+      <summary><sup>Toggle Code Snippet</sup></summary>
+
+```tsx
+const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = createSignal(${2});
+```
+
+</details></td></tr>
       <tr>
         <td><code>seff→</code></td>
         <td>Simple createEffect</td>
@@ -324,19 +337,6 @@ createEffect(() => {
 createEffect(on(${1: source}, (value, prev) => {
   $0
 }));
-```
-
-</details></td></tr><tr><td colspan="3"><h3>Reactivity</h3></td></tr>
-      <tr>
-        <td><code>ssig→</code></td>
-        <td>Simple createSignal</td>
-        <td><b>ts, tsx, js, jsx</b></td>
-      </tr>
-      <tr><td colspan="3"><details>
-      <summary><sup>Toggle Code Snippet</sup></summary>
-
-```tsx
-const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = createSignal(${2});
 ```
 
 </details></td></tr></tbody></table>
