@@ -3,5 +3,15 @@
     "prefix": "ssig",
     "body": ["const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = createSignal(${2});"],
     "description": "Simple createSignal"
+  },
+  "Simple createEffect": {
+    "prefix": "seff",
+    "body": ["createEffect(() => {", "  const value = ${1:source}();", "  $0", "});"],
+    "description": "Simple createEffect"
+  },
+  "createEffect with explicit sources": {
+    "prefix": "seffon",
+    "body": ["createEffect(on(${1: source}, (value, prev) => {", "  $0", "}));"],
+    "description": "createEffect with explicit sources"
   }
 }
