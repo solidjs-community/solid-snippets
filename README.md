@@ -38,19 +38,21 @@ VSCode extension with helpful code snippets for SolidJS.
 </details></td></tr><tr><td colspan="3"><h3>Component</h3></td></tr>
       <tr>
         <td><code>scomp→</code></td>
-        <td>Base for an empty solid.js component</td>
+        <td>Base for an empty solidJS component</td>
         <td><b>jsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
       <summary><sup>Toggle Code Snippet</sup></summary>
 
 ```tsx
-export default function ${1:${TM_FILENAME_BASE}}() {
+
+ function ${1:${TM_FILENAME_BASE}}() {
 
   return (
     <div>${1:${TM_FILENAME_BASE}}</div>
   );
 }
+  export default ${1:${TM_FILENAME_BASE}};
 ```
 
 </details></td></tr>
