@@ -114,5 +114,5 @@ ${stringifyBody(body)}
 (() => {
   const pkg = JSON.parse(readFileSync(pathTo("../package.json")));
   pkg.contributes.snippets = configList;
-  writeFileSync(pathTo("../package.json"), JSON.stringify(pkg, null, 2));
+  writeFileSync(pathTo("../package.json"), JSON.stringify(pkg, null, 2) + "\n");
 })();
