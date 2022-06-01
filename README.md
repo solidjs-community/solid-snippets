@@ -8,7 +8,10 @@
 
 VSCode extension with helpful code snippets for SolidJS.
 
-[**GET THE EXTENSION**](https://marketplace.visualstudio.com/items?itemName=solidjs-community.solid-snippets)
+Available on:
+
+- [**VSCode Marketplace**](https://marketplace.visualstudio.com/items?itemName=solidjs-community.solid-snippets)
+- [**Open VSX**](https://open-vsx.org/extension/solidjs-community/solid-snippets)
 
 ## Snippets
 
