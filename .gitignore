@@ -5,3 +5,5 @@ node_modules/*
 
 # vscode settings
 .vscode/settings.json
+
+.env
