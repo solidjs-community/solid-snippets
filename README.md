@@ -341,6 +341,32 @@ createEffect(on(${1: source}, (value, prev) => {
 }));
 ```
 
+</details></td></tr>
+      <tr>
+        <td><code>smemo→</code></td>
+        <td>Simple createMemo</td>
+        <td><b>ts, tsx, js, jsx</b></td>
+      </tr>
+      <tr><td colspan="3"><details>
+      <summary><sup>Toggle Code Snippet</sup></summary>
+
+```tsx
+const ${1:value} = createMemo(() => $0);
+```
+
+</details></td></tr>
+      <tr>
+        <td><code>smemoon→</code></td>
+        <td>createMemo with explicit sources</td>
+        <td><b>ts, tsx, js, jsx</b></td>
+      </tr>
+      <tr><td colspan="3"><details>
+      <summary><sup>Toggle Code Snippet</sup></summary>
+
+```tsx
+const ${1:value} = createMemo(on(${2:value}, (value, prev) => $0));
+```
+
 </details></td></tr></tbody></table>
 
 <!-- ⛔️ GENERATE-SNIPPETS-TABLE:END — Do not remove or modify this section. -->
