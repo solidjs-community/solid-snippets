@@ -13,5 +13,15 @@
     "prefix": "seffon",
     "body": ["createEffect(on(${1: source}, (value, prev) => {", "  $0", "}));"],
     "description": "createEffect with explicit sources"
+  },
+  "Simple createMemo": {
+    "prefix": "smemo",
+    "body": ["const ${1:value} = createMemo(() => $0);"],
+    "description": "Simple createMemo"
+  },
+  "createMemo with explicit sources": {
+    "prefix": "smemoon",
+    "body": ["const ${1:value} = createMemo(on(${2:value}, (value, prev) => $0));"],
+    "description": "createMemo with explicit sources"
   }
 }
