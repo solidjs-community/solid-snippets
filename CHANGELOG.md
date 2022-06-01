@@ -12,3 +12,8 @@ All info about changes
 
 - Types context provider snippet
 - Option to target only jsx/tsx languages
+
+[0.1.2]
+
+- Add `smemo` and `smemoon` snippets to reactivity category
+- Publish extension on [Open VSX](https://open-vsx.org/extension/solidjs-community/solid-snippets)
