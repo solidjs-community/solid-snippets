@@ -91,7 +91,7 @@
     "prefix": "shtmlcomp",
     "body": [
       "const ${1:${TM_FILENAME_BASE}}: ParentComponent<",
-      "  JSX.IntrinsicElements[\"${2:div}\"] & {",
+      "  ComponentProps<\"${2:div}\"> & {",
       "    $0",
       "  }",
       "> = (props) => {",
@@ -105,10 +105,10 @@
   "Component extending an HTML Element. With Imports": {
     "prefix": "shtmlcompi",
     "body": [
-      "import { ParentComponent, splitProps, JSX } from \"solid-js\";",
+      "import { ParentComponent, splitProps, ComponentProps } from \"solid-js\";",
       "",
       "const ${1:${TM_FILENAME_BASE}}: ParentComponent<",
-      "  JSX.IntrinsicElements[\"${2:div}\"] & {",
+      "  ComponentProps<\"${2:div}\"> & {",
       "    $0",
       "  }",
       "> = (props) => {",
