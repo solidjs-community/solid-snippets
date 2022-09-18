@@ -205,7 +205,7 @@ const ${1:${TM_FILENAME_BASE}}: VoidComponent<{$2}> = (props) => {
 
 ```tsx
 const ${1:${TM_FILENAME_BASE}}: ParentComponent<
-  JSX.IntrinsicElements["${2:div}"] & {
+  ComponentProps<"${2:div}"> & {
     $0
   }
 > = (props) => {
@@ -225,10 +225,10 @@ const ${1:${TM_FILENAME_BASE}}: ParentComponent<
       <summary><sup>Toggle Code Snippet</sup></summary>
 
 ```tsx
-import { ParentComponent, splitProps, JSX } from "solid-js";
+import { ParentComponent, splitProps, ComponentProps } from "solid-js";
 
 const ${1:${TM_FILENAME_BASE}}: ParentComponent<
-  JSX.IntrinsicElements["${2:div}"] & {
+  ComponentProps<"${2:div}"> & {
     $0
   }
 > = (props) => {
