@@ -49,7 +49,7 @@
       "  return <div></div>;",
       "};"
     ],
-    "description": "Solid empty function componen. With Importst"
+    "description": "Solid empty function componen. With Imports"
   },
   "Solid empty Parent Component. With Imports": {
     "prefix": "spcompi",
