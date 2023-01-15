@@ -125,7 +125,7 @@ const ${1:${TM_FILENAME_BASE}}: VoidComponent<{$2}> = (props) => {
 </details></td></tr>
       <tr>
         <td><code>scompi→</code></td>
-        <td>Solid empty function componen. With Importst</td>
+        <td>Solid empty function component. With Imports</td>
         <td><b>tsx</b></td>
       </tr>
       <tr><td colspan="3"><details>
@@ -138,6 +138,26 @@ const ${1:${TM_FILENAME_BASE}}: Component<{$2}> = (props) => {
   $0
   return <div></div>;
 };
+```
+
+</details></td></tr>
+      <tr>
+        <td><code>scompie→</code></td>
+        <td>Solid empty function component. With Imports and default export</td>
+        <td><b>tsx</b></td>
+      </tr>
+      <tr><td colspan="3"><details>
+      <summary><sup>Toggle Code Snippet</sup></summary>
+
+```tsx
+import { Component } from "solid-js";
+
+const ${1:${TM_FILENAME_BASE}}: Component<{$2}> = (props) => {
+  $0
+  return <div></div>;
+};
+
+export default ${1:${TM_FILENAME_BASE}};
 ```
 
 </details></td></tr>
