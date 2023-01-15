@@ -49,7 +49,21 @@
       "  return <div></div>;",
       "};"
     ],
-    "description": "Solid empty function componen. With Importst"
+    "description": "Solid empty function component. With Imports"
+  },
+  "Solid empty function component. With Imports and default export": {
+    "prefix": "scompie",
+    "body": [
+      "import { Component } from \"solid-js\";",
+      "",
+      "const ${1:${TM_FILENAME_BASE}}: Component<{$2}> = (props) => {",
+      "  $0",
+      "  return <div></div>;",
+      "};",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Solid empty function component. With Imports and default export"
   },
   "Solid empty Parent Component. With Imports": {
     "prefix": "spcompi",
