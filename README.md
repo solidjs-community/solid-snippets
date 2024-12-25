@@ -180,6 +180,26 @@ const ${1:${TM_FILENAME_BASE}}: ParentComponent<{$2}> = (props) => {
 
 </details></td></tr>
       <tr>
+        <td><code>spcompie→</code></td>
+        <td>Solid empty Parent Component. With Imports and default export</td>
+        <td><b>tsx</b></td>
+      </tr>
+      <tr><td colspan="3"><details>
+      <summary><sup>Toggle Code Snippet</sup></summary>
+
+```tsx
+import { ParentComponent } from "solid-js";
+
+const ${1:${TM_FILENAME_BASE}}: ParentComponent<{$2}> = (props) => {
+  $0
+  return <div>{props.children}</div>;
+};
+
+export default ${1:${TM_FILENAME_BASE}};
+```
+
+</details></td></tr>
+      <tr>
         <td><code>sfcompi→</code></td>
         <td>Solid empty Flow Component. With Imports</td>
         <td><b>tsx</b></td>
@@ -198,6 +218,26 @@ const ${1:${TM_FILENAME_BASE}}: FlowComponent<{$2}, ${3:JSX.Element}> = (props) 
 
 </details></td></tr>
       <tr>
+        <td><code>sfcompie→</code></td>
+        <td>Solid empty Flow Component. With Imports and default export</td>
+        <td><b>tsx</b></td>
+      </tr>
+      <tr><td colspan="3"><details>
+      <summary><sup>Toggle Code Snippet</sup></summary>
+
+```tsx
+import { FlowComponent, JSX } from "solid-js";
+
+const ${1:${TM_FILENAME_BASE}}: FlowComponent<{$2}, ${3:JSX.Element}> = (props) => {
+  $0
+  return <div>{props.children}</div>;
+};
+
+export default ${1:${TM_FILENAME_BASE}};
+```
+
+</details></td></tr>
+      <tr>
         <td><code>svcompi→</code></td>
         <td>Solid empty Void Component. With Imports</td>
         <td><b>tsx</b></td>
@@ -212,6 +252,26 @@ const ${1:${TM_FILENAME_BASE}}: VoidComponent<{$2}> = (props) => {
   $0
   return <div></div>;
 };
+```
+
+</details></td></tr>
+      <tr>
+        <td><code>svcompie→</code></td>
+        <td>Solid empty Void Component. With Imports and default export</td>
+        <td><b>tsx</b></td>
+      </tr>
+      <tr><td colspan="3"><details>
+      <summary><sup>Toggle Code Snippet</sup></summary>
+
+```tsx
+import { VoidComponent } from "solid-js";
+
+const ${1:${TM_FILENAME_BASE}}: VoidComponent<{$2}> = (props) => {
+  $0
+  return <div></div>;
+};
+
+export default ${1:${TM_FILENAME_BASE}};
 ```
 
 </details></td></tr>
