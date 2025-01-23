@@ -77,6 +77,20 @@
     ],
     "description": "Solid empty Parent Component. With Imports"
   },
+  "Solid empty Parent Component. With Imports and default export": {
+    "prefix": "spcompie",
+    "body": [
+      "import { ParentComponent } from \"solid-js\";",
+      "",
+      "const ${1:${TM_FILENAME_BASE}}: ParentComponent<{$2}> = (props) => {",
+      "  $0",
+      "  return <div>{props.children}</div>;",
+      "};",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Solid empty Parent Component. With Imports and default export"
+  },
   "Solid empty Flow Component. With Imports": {
     "prefix": "sfcompi",
     "body": [
@@ -89,6 +103,20 @@
     ],
     "description": "Solid empty Flow Component. With Imports"
   },
+  "Solid empty Flow Component. With Imports and default export": {
+    "prefix": "sfcompie",
+    "body": [
+      "import { FlowComponent, JSX } from \"solid-js\";",
+      "",
+      "const ${1:${TM_FILENAME_BASE}}: FlowComponent<{$2}, ${3:JSX.Element}> = (props) => {",
+      "  $0",
+      "  return <div>{props.children}</div>;",
+      "};",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Solid empty Flow Component. With Imports and default export"
+  },
   "Solid empty Void Component. With Imports": {
     "prefix": "svcompi",
     "body": [
@@ -100,6 +128,20 @@
       "};"
     ],
     "description": "Solid empty Void Component. With Imports"
+  },
+  "Solid empty Void Component. With Imports and default export": {
+    "prefix": "svcompie",
+    "body": [
+      "import { VoidComponent } from \"solid-js\";",
+      "",
+      "const ${1:${TM_FILENAME_BASE}}: VoidComponent<{$2}> = (props) => {",
+      "  $0",
+      "  return <div></div>;",
+      "};",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Solid empty Void Component. With Imports and default export"
   },
   "Component extending an HTML Element": {
     "prefix": "shtmlcomp",
